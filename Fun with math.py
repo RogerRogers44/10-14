@@ -23,3 +23,4 @@ for sides in range(800, 1000000000, 800):
     print(sides, archimedes(sides))
 print(math.pi)
 #  I made 1 billion sides and it's pretty close
+print(math.pi - archimedes(1000000000))
