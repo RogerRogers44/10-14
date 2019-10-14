@@ -19,5 +19,7 @@ def archimedes(numSides):
 print(archimedes(4))
 print(archimedes(8))
 print(archimedes(16))
-for sides in range(8, 100, 8):
+for sides in range(800, 1000000000, 800):
     print(sides, archimedes(sides))
+print(math.pi)
+#  I made 1 billion sides and it's pretty close
