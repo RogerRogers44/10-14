@@ -19,8 +19,21 @@ def archimedes(numSides):
 print(archimedes(4))
 print(archimedes(8))
 print(archimedes(16))
-for sides in range(800, 1000000000, 800):
-    print(sides, archimedes(sides))
+#for sides in range(800, 1000000000, 800):
+    #print(sides, archimedes(sides))
 print(math.pi)
 #  I made 1 billion sides and it's pretty close
-print(math.pi - archimedes(1000000000))
+# print(math.pi - archimedes(1000000000))
+
+#  Accumulators
+
+acc = 0
+# adds 1 to val every time it runs so it'll be 1, 2, 3...
+# it keeps doing that until it has done it 6 times
+# whatever you get for acc last time, you plug that in for acc the next time
+for val in range(1, 100):
+    acc = acc + val
+
+print(acc)
+
+
