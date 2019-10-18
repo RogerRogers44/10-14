@@ -67,8 +67,22 @@ alice = 20
 bob = 15
 carol = 25
 ans = 0
-if alice > 20:
+if alice == 20:
     ans = 300
+    if bob < 50:
+        ans = 150
+    else:
+        ans = 999
 else:
     ans = 200
 print(ans)
+
+value = 75
+if value > 10:
+    print("bigger than 10")
+elif value > 20:
+    print("bigger than 20")
+elif value > 45:
+    print("bigger than 45")
+else:
+    print("not bigger than much")
