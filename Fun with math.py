@@ -31,9 +31,22 @@ acc = 0
 # adds 1 to val every time it runs so it'll be 1, 2, 3...
 # it keeps doing that until it has done it 6 times
 # whatever you get for acc last time, you plug that in for acc the next time
-for val in range(1, 100):
+for val in range(1, 6):
     acc = acc + val
 
 print(acc)
 
+acc2 = 0
+for val2 in range(0, 100, 2):
+    acc2 = acc2 + val2
+print(val2)
+
+
+# A Monto Carlo Simulation
+
+# random numbers
+
+import random
+
+print(random.random())
 
