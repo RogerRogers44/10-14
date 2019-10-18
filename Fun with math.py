@@ -50,3 +50,25 @@ import random
 
 print(random.random())
 
+# Boolean Expressions
+# <, <+, >, >=, ==, !=
+# Compound Boolean Expressions
+# and, or, not
+
+dogweight = 25
+print(dogweight == 25)
+catweight = 12
+print(dogweight >= 25 or catweight == 10)
+print(not catweight >= 10)
+
+# decision making skills
+
+alice = 20
+bob = 15
+carol = 25
+ans = 0
+if alice > 20:
+    ans = 300
+else:
+    ans = 200
+print(ans)
