@@ -110,6 +110,7 @@ import turtle
 def showMontePi(numDarts):
     scn = turtle.Screen()
     t = turtle.Turtle()
+    t.speed(200)
 
     scn.setworldcoordinates(-2, -2, 2, 2)
 
@@ -137,8 +138,39 @@ def showMontePi(numDarts):
             t.color("green")
         else:
             t.color("red")
-
         t.dot()
-    pi = inCircle / numDarts * 4
+        t.goto(-x, y)
+        if distance <= 1:
+            inCircle = inCircle + 1
+            t.color("green")
+        else:
+            t.color("red")
+        t.dot()
+        t.goto(x, -y)
+        if distance <= 1:
+            inCircle = inCircle + 1
+            t.color("green")
+        else:
+            t.color("red")
+        t.dot()
+        t.goto(-x, y)
+        if distance <= 1:
+            inCircle = inCircle + 1
+            t.color("green")
+        else:
+            t.color("red")
+        t.dot()
+        t.goto(-x, -y)
+        if distance <= 1:
+            inCircle = inCircle + 1
+            t.color("green")
+        else:
+            t.color("red")
+        t.dot()
+
+    pi = inCircle
     scn.exitonclick()
     return pi
+
+
+print(showMontePi(1000))
