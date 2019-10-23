@@ -168,9 +168,9 @@ def showMontePi(numDarts):
             t.color("red")
         t.dot()
 
-    pi = inCircle
+    pi = inCircle / numDarts
     scn.exitonclick()
     return pi
 
 
-print(showMontePi(1000))
+print(showMontePi(10))
